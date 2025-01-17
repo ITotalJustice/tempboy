@@ -11,7 +11,7 @@ you will need to install the following packages.
 for linux, use your package manager. on windows, use vcpkg.
 
 ```cmake
-cmake -B build -PLATFORM_SDL2=ON -DCMAKE_BUILD_TYPE=Release
+cmake -B build -DPLATFORM_SDL2=ON -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j
 ```
 
