@@ -31,7 +31,7 @@ elseif (${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
 
 elseif (${CMAKE_SYSTEM_NAME} STREQUAL "Windows")
     project(unofficial-nativefiledialog LANGUAGES C)
-    add_library(unofficial-nativefiledialog nfd_win.m)
+    add_library(unofficial-nativefiledialog nfd_win.c)
     add_library(unofficial::nativefiledialog::nfd ALIAS ${PROJECT_NAME})
     target_include_directories(unofficial-nativefiledialog PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
     set(HAS_NFD ON PARENT_SCOPE)
