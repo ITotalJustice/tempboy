@@ -13,9 +13,10 @@
 #    define _CRT_SECURE_NO_WARNINGS
 #endif
 
-#include <stdlib.h>
 #include <assert.h>
+#include <stdlib.h>
 #include <string.h>
+#include <windows.h>
 
 #include "nfd.h"
 

@@ -65,6 +65,12 @@ if (NINTENDO_SWITCH)
     set(BUILD_SHARED_LIBS OFF)
 endif()
 
+if (WIN32)
+    # Using UNICODE with NFD currently creates random UTF-8 folders on the
+    # filesystem.
+    add_definitions(-DFTG_IGNORE_UNICODE)
+endif()
+
 if (PLATFORM_LIBRETRO)
     if (SWITCH)
         set(BUILD_SHARED_LIBS OFF)
